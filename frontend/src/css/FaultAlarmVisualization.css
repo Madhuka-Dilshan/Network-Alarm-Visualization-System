@@ -1,0 +1,117 @@
+.header-title {
+    color:white;
+    text-align: center; /* Center the text horizontally */
+  margin-top: 20px;   /* Optional: add some margin at the top */
+  font-size: 24px; 
+  }
+  body {
+    background-image: url(../images/net2.gif); /* Path to your GIF */
+    background-repeat: no-repeat; /* Prevents the GIF from repeating */
+    background-size: cover; /* Ensures the GIF covers the entire screen */
+    background-position: center; /* Centers the GIF on the page */
+    margin: 0;
+    padding: 0;
+    /* Optional: for consistent font style */
+}
+
+
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    cursor: pointer; /* Makes the cards look clickable */
+}
+
+.card {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    background-color: rgb(44, 174, 184);
+    height: 100px;
+    margin: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Smooth scale effect */
+}
+
+
+.card:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.card h3{
+  color: rgb(27, 19, 90);
+} 
+
+.nodes {
+  display: flex;
+  flex-direction: column; /* Stacks items vertically */
+  gap: 20px; /* Adds space between children */
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+  backdrop-filter: blur(3px); /* Applies blur to the background behind the nodes */
+  min-height: 500px;
+  width: 40%;
+  margin: 40px auto; /* Adds margin to position below the cards */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for better contrast */
+  text-align: center;
+
+}
+
+/* .nodes h3{
+  text-align: center;
+} */
+  
+
+.node-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  width: 50%;
+}
+
+  .node-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .node-list li {
+    background-color: #f0f8ff;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    text-align: left;
+}
+  
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0; /* Fully transparent */
+    }
+    50% {
+      opacity: 1; /* Fully visible */
+    }
+    100% {
+      opacity: 0; /* Fully transparent again */
+    }
+  }
+  
+  .sentence {
+      text-align: center;
+      margin-top: 20px;
+      color: white;
+      animation: fadeInOut 4s ease-in-out infinite; /* Continuous animation */
+  }
+  

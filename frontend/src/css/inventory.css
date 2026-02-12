@@ -1,0 +1,36 @@
+.inv-container{
+  display: flex;
+  flex-direction: column; /* Stacks items vertically */
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+  backdrop-filter: blur(5px); /* Applies blur to the background behind the nodes */
+  min-height: 550px;
+  width: auto;
+  padding: 10px;
+  margin: 60px 10px; /* Adds margin to position below the cards */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for better contrast */
+  text-align: center;
+}
+
+.inv-container table{
+    font-size: large;
+    border: 1px solid black;
+    color: rgb(206, 210, 207);
+    background-color: transparent;
+}
+tr:nth-child(even):hover {
+    background-color: #D6EEEE;
+    color: black;
+}
+tr:nth-child(odd):hover {
+    background-color: #D6EEEE;
+    color: black;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  th:nth-child(even),td:nth-child(even) {
+    background-color: rgba(49, 64, 64, 0.4);
+  }
